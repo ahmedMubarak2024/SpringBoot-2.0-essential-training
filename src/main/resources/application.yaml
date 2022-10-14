@@ -1,13 +1,9 @@
 spring:
-  config:
-    activate:
-      on-profile: dev
+  profiles: dev
 server:
   port: 8000
 ---
 spring:
-  config:
-    activate:
-      on-profile: preprod
+  profiles: test
 server:
   port: 9000
